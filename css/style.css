@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    /* background-color: #ffffff; */
+    background-color: #4284ff;
+    text-align: center;
+    font-family: "Lora", serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #ced6ea; */
+    background-color: white;
+}
+
+footer {
+    /* background-color: #ced6ea; */
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 20px   40px;
+}
+
+footer p:last-child {
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer .img-telegram, .img-cookie{
+    border: 2px solid black;
+    border-radius: 90px;
+}
+
+#about {
+    /* background-color:  rgb(255, 255, 255); */
+    background-color: #4284ff;
+    padding: 20px 100px;
+    text-align: center;
+}
+
+#pozdrav{
+    background-color: #4284ff;
+    text-align: center;
+    font-family: "Lora", serif;
+    color: #333;
+}
+
+blockquote{
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#content1, #content2, #content3, #content4 {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    text-align: center;
+}
+
+img {
+    margin: 15px 0;                     
+    padding: 5px;                       
+    background-color: white;            
+}
+
+img + p{
+    margin-top: 10px;
+}
+
+figcaption {
+    text-align: center;                 
+    margin-top: 5px;                    
+    color: yellow;
+    font-size: 14px;                    
+}
+
+#articles {
+    padding: 20px 40px; 
+    width: 300px; /* Ширина */
+    margin: 30px auto;
+    border-radius: 50px; /* Закругление углов */
+    background-color:#dacbed;
+}
+
+h2 {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+    padding: 0px 20px 20px 20px; 
+    font-family: "Lora", serif;
+    color: #333;
+}
+
+main p::first-line {
+    letter-spacing: 1.5px;
+}
+
+p:lang(en) {
+    font-style: italic;
+    color: #000000;
+}
+
+#about p {
+    color: #2d2d2d;
+    background-color: #ffffff4d;
+    padding: 10px;
+    border-radius: 5px; 
+    margin: 10px 0;
+}
+
+.glavnaya{
+    font-size: 30px;
+        padding: 12px 20px;
+
+}
+
+.BBED{
+    font-size: 30px;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.BBED:hover{
+    color: white;
+    padding: 1px 15px 0px ; /* вверх, лево/прво, низ */
+    border-radius: 50px;
+    background-color: blue;
+    outline: none;
+}
+
+.BBED:focus{
+    color: white;
+    padding: 1px 15px 0px ;
+    border-radius: 50px;
+    background-color: #b4e6ff;
+    outline: none; 
+}
+
+.infa{
+    font-size: 20px;
+    margin-bottom: 12px;
+    padding: 12px 20px;   /* Отступы сверху/снизу слева/справа  */ 
+    text-decoration: none; /* убирает нижнее подчеркивание */
+    display: block; /* Делить ссылки на отдельные блоки */
+} 
+
+.infa:hover{    
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    outline: solid rgb(0, 30, 255);
+    border-radius: 20px;
+}
+
+.infa[href*="article4.html"]::after{
+    content: "Важно!";
+    color: red;
+    padding: 2px 5px;
+}
+
+#articles ul li:nth-child(odd) .infa{ 
+    color: #ff971f;
+}
+
+#articles ul li:nth-child(even) .infa{
+    color: #4284ff;
+}
+
+body{
+    font-size: initial;   
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link { /* меняет цвет сылки пока по ней не перешли */
+    color: rgb(2, 1, 1);
+}
+
+a:visited{ /* меняет цвет сылки после перехода поней */
+    color: rgb(0, 0, 0);
+}
+
+a:focus{ /* меняет цвет после нажатие по сылке */
+    color: rgb(255, 0, 0);
+    outline: 2px dotted #7fff7f;
+}
+
+a:hover{ /* меняет цвет когда наводишь мышкой на сылку */
+    color: yellow;
+}
+
+a:active{ 
+    color: rgb(58, 30, 25);
+}
+
+h1, h2{
+    text-transform: uppercase; /* делает буквы заглавными */
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.h2-new::after{
+    content: "new";
+    color: yellowgreen;
+    margin-left: 15px ;
+}
+
+#content1 li {
+    list-style-type: none;
+    padding: 20px 40px; 
+    width: 300px; /* Ширина */
+    margin: 30px auto;
+    border-radius: 50px; /* Закругление углов */
+    background-color:#dacbed;
+}
+
+.bio{
+    padding: 2px 40px; 
+    width: 300px; /* Ширина */
+    margin: 3px auto;
+    list-style-type: none;
+    border-radius: 5px; /* Закругление углов */
+    background-color:#dacbed;
+}
+
+dl{
+    padding-left: 20px;
+}
+
+dl dt{
+    font-weight: 600;
+    padding: 3px 0px;
+}
+
+.my-table{
+    border: solid 20px blue;
+    border-collapse: collapse;
+}
+
+.my-table td, .my-table th{
+    border: solid 2px red;
+    padding: 10px 15px;
+}
